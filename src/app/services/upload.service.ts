@@ -18,7 +18,7 @@ export class UploadService {
     formData.append('image', image);
 
     const headers = new HttpHeaders({
-      Authorization: `Bearer ${this.clientId}`
+      Authorization: `Client-ID ${this.clientId}`
     });
 
     return this.http.post(this.uploadUrl, formData, { headers }).pipe(
