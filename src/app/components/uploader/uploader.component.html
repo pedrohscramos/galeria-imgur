@@ -1,0 +1,9 @@
+<div class="max-w-md mx-auto">
+  <input
+    type="file"
+    class="mt-4 border border-gray-300 p-2 rounded-md"
+    (change)="onFileSelected($event)"
+  />
+  <div *ngIf="errorMessage" class="text-red-500 mt-2">{{ errorMessage }}</div>
+</div>
+<a routerLink="/create-gallery">Nova galeria</a>
